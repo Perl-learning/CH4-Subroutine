@@ -1,0 +1,15 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use feature 'say';
+my $a = 0;
+sub hello {
+    $a += 1;
+    say "hello".$a;
+}
+
+for (my $i = 0; $i < 10; $i++)
+{
+  &hello;
+}
